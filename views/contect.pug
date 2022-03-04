@@ -1,0 +1,22 @@
+extends base.pug
+
+//- block scripts
+//-     script(src='/index.js')
+
+block style
+    style 
+        include ../static/style.css 
+        include ../static/stylecontect.css
+
+block content 
+    .container 
+        h1 Please Fill this form
+        form(action="/submit",method="POST",class="myform")
+            input(type="text",name="name",placeholder="Enter your name") 
+            input(type="number",name="age",placeholder="Enter your age") 
+            input(type="phone",name="phone",placeholder="Enter your phone number") 
+            input(type="text",name="address",placeholder="Enter your address") 
+            input(type="email",name="email",placeholder="Enter your email") 
+            input(type="text",name="more",placeholder="more about you") 
+            button(class="btn" id="submit")
+                | Submit 

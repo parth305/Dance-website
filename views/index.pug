@@ -1,0 +1,60 @@
+doctype html 
+html 
+    head 
+        title parth's Dance Class 
+        style 
+            include ../static/style.css 
+    body 
+        nav#navbar 
+            ul 
+                div#logo 
+                    img(src="../static/logo.png")
+                    |   bhyu Dance
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Serviecs]
+                li #[a(href="/") Join Class]
+                li #[a(href="/") Contect us]
+
+        section#introsection 
+            h1  Welcome to Parth's Dance Clube 
+            h3 EAT SLEEP DANCE REPEAT
+
+        section#missionsection
+            h2 Our Mission
+
+            div.cardcontainer 
+                .card 
+                    h3 we have greate teachers 
+                    .card-box 
+                        .card-image 
+                            img(src="../static/images/1-dance.jpg")
+                        .card-content 
+                            p we have the best teachers in the world 
+                    
+                    
+                .card 
+                    h3 dance the way you like 
+                    .card-box 
+                        .card-image 
+                            img(src="../static/images/2-dance.png")
+                        .card-content 
+                            p you can choose your dancec style and your dance partner
+                .card 
+                    h3 anybody can dance
+                    .card-box 
+                        .card-image 
+                            img(src="../static/images/3-dance.png")
+                        .card-content 
+                            p if you don;t know anything about dance our greate teachers will thech you everthing 
+           
+        
+        section#sponsers 
+            h2   Our sponseser 
+            .sponser-images 
+                img(src="../static/images/apple.png")
+                img(src="../static/images/facebook.png")
+                img(src="../static/images/microsoft.png")
+                img(src="../static/images/apple.png")
+        footer 
+            | ALL RIGTHS RESERVED 
